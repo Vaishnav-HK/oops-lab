@@ -16,7 +16,7 @@ class greatestOfThree{
 		}
 		if (c>a){
 			if(c>b){
-				System.out.println(c+" is the largset");
+				System.out.println(c+" is the largest");
 			}
 		}
 	}
