@@ -1,4 +1,4 @@
-class main{
+class sqaureSum{
 	public static void main(String[] args){
 		int n=3;
 		int count=0;

@@ -1,4 +1,4 @@
-class Main{
+class greatestOfThree{
 	public static void main(String[] args){
 		int a=334;
 		int b=290;

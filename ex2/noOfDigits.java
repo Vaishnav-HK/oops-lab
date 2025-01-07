@@ -1,4 +1,4 @@
-class main{
+class noOfDigits{
 	public static void main(String[] args){
 		int num=548834;
 		int tnum=num;

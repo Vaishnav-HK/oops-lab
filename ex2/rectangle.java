@@ -1,4 +1,4 @@
-class main{
+class rectangle{
 	public static void main(String[] args){
 		float len=5;
 		float bred=10;

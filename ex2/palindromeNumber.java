@@ -1,4 +1,4 @@
-class Main{
+class palindromeNumber{
 	public static void main(String[] args){
 		int num=123;
 		int rev=0;
