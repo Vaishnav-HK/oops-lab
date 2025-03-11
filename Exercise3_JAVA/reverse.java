@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 class reverse{
 	public static void main(String[] args){
-		int num=123;
+		Scanner scan=new Scanner(System.in);
+		int num=scan.nextInt();
 		int rev=0;
 		int digit=0;
 		while(num>0){
