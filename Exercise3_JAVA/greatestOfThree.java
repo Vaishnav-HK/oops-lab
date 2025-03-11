@@ -1,8 +1,13 @@
+import java.util.Scanner;
 class greatestOfThree{
 	public static void main(String[] args){
-		int a=334;
-		int b=290;
-		int c=2310;
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Enter 1st number: ");
+		int a=scan.nextInt();
+		System.out.print("Enter 2nd number: ");
+		int b=scan.nextInt();
+		System.out.print("Enter 3rd number: ");
+		int c=scan.nextInt();
 
 		if (a>b){
 			if(a>c){      
