@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 class noOfDigits{
 	public static void main(String[] args){
-		int num=548834;
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Enter number: ");
+		int num=scan.nextInt();
 		int tnum=num;
 		int digits=0;
 		while (tnum>0){
