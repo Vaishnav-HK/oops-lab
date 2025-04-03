@@ -1,10 +1,12 @@
 class Cam{
 	public static void main(String[] args){
 		DigitalCamera camOBJ=new DigitalCamera();
-		camOBJ.setMan("Canon");	
 		camOBJ.setFL(0.3);
-		camOBJ.setFlash(true);
+		camOBJ.setMan("Canon");
+		camOBJ.turnOn();
+		camOBJ.digitalZoom(1.5);
 		camOBJ.takePhoto();
+		camOBJ.turnOff();
 		camOBJ.recharge();
 	}
 }
@@ -13,19 +15,10 @@ class Cam{
 class Camera{
 	double focalLength;
 	String manufacturer;
-	boolean flash;
+	
 	public void setFL(double fl){
 		focalLength=fl;
 		System.out.println("focal length set as "+fl);
-	}
-	public void setFlash(boolean set){
-		flash=set;	
-		if(set){
-		System.out.println("Flash is on...");
-		}
-		else{
-		System.out.println("Flash is off...");
-		}
 	}	
 	public void setMan(String man){
 		manufacturer=man;
@@ -38,7 +31,18 @@ class Camera{
 
 class DigitalCamera extends Camera{
 	double batteryLevel;
+	double digiZoom;
+	public void turnOn(){
+		System.out.println("turning on camera....");
+	}
+	public void turnOff(){
+		System.out.println("turning off camera....");
+	}
 	public void recharge(){
 		System.out.println("Recharging...");
+	} 
+	public void digitalZoom(double zoomVal){
+		digiZoom=zoomVal;
+		System.out.println("Digital Zoom set at "+zoomVal);
 	} 
 }
