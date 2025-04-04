@@ -1,4 +1,4 @@
-class transportaion{
+class transportaion_abstract{
 	public static void main(String[] args){
 		Car carOBJ=new Car();
 		carOBJ.set("electric","tesla",4,4);
