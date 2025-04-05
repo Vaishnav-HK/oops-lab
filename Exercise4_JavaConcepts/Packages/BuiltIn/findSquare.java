@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.lang.Math;
 class findSquare{
     public static void main(String[] args){
         Scanner scan= new Scanner(System.in);
