@@ -1,46 +1,52 @@
 class bikes{
 	public static void main(String[] args){
-		
+		motorbike bike=new motorbike("gas",500.0,1000.0);
+		cycle cycleOBJ=new cycle();
+		cycleOBJ.startPedalling();
+		cycleOBJ.useBrakes(true);
+		bike.startBike();
+		bike.useBrakes(true);
+		bike.checkFuel();
 	}
 }
 
-class two-wheeler{
-	const no_of_wheels=2;
+class two_wheeler{
+	int no_of_wheels=2;
 	float speed;
-	bool brakes;
+	boolean brakes;
 	
-	public void useBrakes(boool val){
+	public void useBrakes(boolean val){
 		brakes=val;
 		if(val){
-			System.out.prinln("Engaging Brakes");
+			System.out.println("Engaging Brakes");
 		}
 		else{
-			System.out.prinln("Disengaging Brakes");
+			System.out.println("Disengaging Brakes");
 		}
 	}
 }
 
-class cycle extends two-wheeler{ 
+class cycle extends two_wheeler{ 
 	String type;
 	public void startPedalling(){
 		System.out.println("Pedalling....");
 	}	 
 }
 
-class motorbike extends two-wheeler{
+class motorbike extends two_wheeler{
 	String type;
 	double fuelCapacity;
 	double fuelLevel;
-	public void motorbike(String t, double fc, double fl){
-		this.type=t;
-		this.fuelCapacity=fc;
-		this.fuelLevel=fl;
+	public motorbike(String type, double fuelCapacity, double fuelLevel){
+		this.type=type;
+		this.fuelCapacity=fuelCapacity;
+		this.fuelLevel=fuelLevel;
 	}
 	public void startBike(){
 		System.out.println("starting Bike....");
 	}
 	public void checkFuel(){
-		System.out.println("Amount of fuel: "+fl+" Litres");
+		System.out.println("Amount of fuel: "+fuelLevel+" Litres");
 	}
 	
 }
