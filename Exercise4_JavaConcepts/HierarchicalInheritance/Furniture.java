@@ -1,9 +1,13 @@
 class Furniture{
 	public static void main(String[] args){
-		HeightAdjustTable tableOBJ=new HeightAdjustTable(5.0,20
-);
+		HeightAdjustTable tableOBJ=new HeightAdjustTable(5.0,20);
+		FoldableTable foldable=new FoldableTable(1.2);
+		foldable.Table(15.0,10,10,"metal");
+		foldable.unfold();
+		foldable.fold();
 		tableOBJ.Table(20,50,10,"wood");
 		tableOBJ.changeHeight(10);
+		tableOBJ.changeHeight(50);
 	}	
 }
 
@@ -23,11 +27,14 @@ class Table{
 
 class FoldableTable extends Table{
 	Double foldedHeight;
-	public void FoldableTable(Double fh){
+	public FoldableTable(Double fh){
 		this.foldedHeight=fh;
 	}
 	public void fold(){
-		System.out.println("FOLDING TABLE/nNow you have more space :D");
+		System.out.println("FOLDING TABLE - Now you have more space");
+	}
+	public void unfold(){
+		System.out.println("UNFOLDING TABLE - Table is ready to be used");
 	}
 }
 
